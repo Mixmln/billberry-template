@@ -13,15 +13,15 @@
 }
 
 .about-title {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
 }
 
 .about-desc {
-  width: 50%;
+  width: 53%;
   line-height: 1.5;
   letter-spacing: 1px;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 300;
 }
 

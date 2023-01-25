@@ -48,15 +48,16 @@ function Footer() {
               <h3>WANT TO PARTNER
                 WITH US?</h3>
               <Button variant='outlined' sx={{
-                fontSize: 14,
-                width: '65%',
+                fontSize: 12,
+                width: '40%',
                 padding: '16px 26px',
                 boxSizing: 'border-box',
                 lineHeight: 1.5,
+                fontWeight: 'bold',
                 marginBottom: 7
               }}
                 color='justWhite'>
-                Learn More About Our Approach
+                Get in touch
               </Button>
               <p>Blueberry Technologies LLC DBA Bilberrry</p>
             </div>

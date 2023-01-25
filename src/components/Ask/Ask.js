@@ -32,11 +32,12 @@ function Ask() {
             <div className='ask-p'>
               <p>When we agree to build something, we’re agreeing to build the future of your business. So we always start by asking: Why?</p>
               <Button variant='outlined' sx={{
-                fontSize: 14,
-                width: '65%',
+                fontSize: 12,
+                width: '70%',
                 padding: '16px 26px',
                 boxSizing: 'border-box',
-                lineHeight: 1.5
+                lineHeight: 1.5,
+                fontWeight: 'bold'
               }}
                 color='justWhite'>
                 Learn More About Our Approach

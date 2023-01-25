@@ -37,11 +37,12 @@ function PascoSection() {
             <h2>"WE NEED TO INNOVATE. WHAT NOW?"</h2>
             <p>Our favorite question. When you know what you want, but not what  you want, we go all-in to uncover the strategies that will get your business where you want it to go.</p>
             <Button variant='outlined' sx={{
-              fontSize: 14,
+              fontSize: 12,
               width: '65%',
               padding: '16px 26px',
               boxSizing: 'border-box',
-              lineHeight: 1.5
+              lineHeight: 1.5,
+              fontWeight: 'bold'
             }}
               color='justWhite'
             >Here's how we helped a legacy business digitally transform its operations.</Button>
