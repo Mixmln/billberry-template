@@ -1,0 +1,31 @@
+.benefits-section {
+  border-bottom: 1px solid white;
+}
+
+.benefits {
+  width: 60%;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  color: white;
+}
+
+.think,
+.build,
+.eye {
+  width: 50%;
+}
+
+.benefits h4 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.benefits p {
+  margin-bottom: 0.2rem;
+}
+
+.hr {
+  border: 1px solid white;
+}
