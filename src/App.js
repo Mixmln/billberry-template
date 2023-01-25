@@ -1,36 +1,16 @@
 import '../src/css/App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
-import Nav from './components/Nav/Nav';
-import About from './components/About/About';
-import Hero from './components/Hero/Hero';
-import PascoSection from './components/Pasco/PascoSection';
-
-import LifeSection from './components/Life/LifeSection';
-
-import Blueprint from './components/BlueprintRegistry/Blueprint';
-import Benefits from './components/Benefits/Benefits';
-import Ask from './components/Ask/Ask';
-import Footer from './components/Footer/Footer';
-
+import HomePage from './pages/HomePage';
 
 function App() {
-  const dispatch = useDispatch();
 
-  return <div className='App'>
-    <Nav />
-    <Hero />
-    <div className="container">
-      <About />
-    </div>
-    <PascoSection></PascoSection>
-    <LifeSection />
-    <Blueprint></Blueprint>
-    <Benefits />
-    <Ask />
-    <Footer />
-
-  </div>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+      </Routes>
+    </BrowserRouter >
+  )
 }
 
 export default App;

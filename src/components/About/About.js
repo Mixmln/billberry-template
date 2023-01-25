@@ -4,7 +4,7 @@ import '../About/about.css'
 
 function About() {
   return (
-    <div className='about-section'>
+    <div className='container about-section'>
       <div className='about-text'>
         <h4 className='about-title'>WE ARE BILBERRY</h4>
         <p className='about-desc'>We design and develop websites, apps and digital experiences that help our clients grow, innovate, and transform. We listen, learn and understand before we build. We identify your goals together, then use our expertise to find that sweet spot of realistic and impactful.</p>
