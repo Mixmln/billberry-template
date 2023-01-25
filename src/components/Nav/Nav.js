@@ -12,6 +12,13 @@ function Nav() {
 
   return (
     <div className='nav-container'>
+      <div className={` ${open ? 'dropdown-content-opened' : 'dropdown-content-closed'}`}>
+        <div className='container'>
+
+
+        </div>
+
+      </div>
       <nav className='container'>
         <img className='nav-logo' src={bilberry} alt="logo" />
         <ul>
@@ -24,11 +31,7 @@ function Nav() {
           <Switch />
         </ul>
       </nav>
-      <div className={`${open ? 'dropdown-content-opened' : 'dropdown-content-closed'}`}>
 
-        <h1>Labas</h1>
-
-      </div>
     </div>
   )
 }

@@ -12,10 +12,10 @@ nav {
 }
 
 .nav-logo {
-  height: 30px;
+  height: 90px;
 }
 
-.nav-container ul {
+ul {
   color: white;
   list-style: none;
   display: flex;
@@ -23,7 +23,7 @@ nav {
   gap: 2.3rem;
 }
 
-.nav-container ul li {
+ul li {
   cursor: pointer;
   font-size: 0.95rem;
   text-decoration: none;
@@ -31,7 +31,7 @@ nav {
   transition: 0.3s ease-in-out;
 }
 
-.nav-container ul li:hover {
+ul li:hover {
   text-decoration: underline;
   text-decoration-color: white;
   text-underline-offset: 10px;
@@ -55,7 +55,7 @@ nav {
   background-color: rgba(0, 0, 0, 0.192);
   height: 0px;
   width: 100%;
-  animation-name: open;
+  animation-name: drop;
   animation-duration: 3s;
 }
 
@@ -64,31 +64,22 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 80px;
+  overflow: hidden;
+  top: 90px;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.216);
-  height: 400px;
+  background-color: rgba(0, 0, 0, 0.616);
+  height: 300px;
   width: 100%;
-  animation-name: close;
-  animation-duration: 1s;
+  animation-name: drop;
+  animation-duration: 0.8s;
 }
 
-@keyframes open {
+@keyframes drop {
   from {
     height: 0px;
   }
 
   to {
-    height: 400px;
-  }
-}
-
-@keyframes close {
-  from {
-    height: 400px;
-  }
-
-  to {
-    height: 0px;
+    height: 300px;
   }
 }
