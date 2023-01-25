@@ -9,6 +9,7 @@ import PascoSection from './components/Pasco/PascoSection';
 import LifeSection from './components/Life/LifeSection';
 
 import Blueprint from './components/BlueprintRegistry/Blueprint';
+import Benefits from './components/Benefits/Benefits';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
     <PascoSection></PascoSection>
     <LifeSection />
     <Blueprint></Blueprint>
+    <Benefits />
 
   </div>;
 }
