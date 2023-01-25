@@ -1,7 +1,7 @@
 .nav-container {
   position: sticky;
   top: 0px;
-  z-index: 2;
+  z-index: 10;
   backdrop-filter: blur(2px);
 }
 
@@ -37,6 +37,58 @@ ul li:hover {
   text-underline-offset: 10px;
 }
 
+/* bus reikalingas */
+.selected-page {
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-underline-offset: 10px;
+}
+
 .MuiSwitch-track {
   background-color: white !important;
+}
+
+.dropdown-content-closed {
+  display: none;
+  top: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.192);
+  height: 0px;
+  width: 100%;
+  animation-name: open;
+  animation-duration: 3s;
+}
+
+.dropdown-content-opened {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 80px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.216);
+  height: 400px;
+  width: 100%;
+  animation-name: close;
+  animation-duration: 1s;
+}
+
+@keyframes open {
+  from {
+    height: 0px;
+  }
+
+  to {
+    height: 400px;
+  }
+}
+
+@keyframes close {
+  from {
+    height: 400px;
+  }
+
+  to {
+    height: 0px;
+  }
 }
