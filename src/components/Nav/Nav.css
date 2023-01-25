@@ -1,13 +1,38 @@
+.nav-container {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  backdrop-filter: blur(8px);
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(223, 223, 223);
-  padding: 0 2rem;
+}
+
+.nav-logo {
+  height: 90px;
 }
 
 ul {
+  color: white;
   list-style: none;
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: 2.3rem;
+}
+
+ul li {
+  cursor: pointer;
+  font-size: 0.95rem;
+  text-decoration: none;
+  text-decoration-color: transparent;
+  transition: 0.3s ease-in-out;
+}
+
+ul li:hover {
+  text-decoration: underline;
+  text-decoration-color: white;
+  text-underline-offset: 10px;
 }

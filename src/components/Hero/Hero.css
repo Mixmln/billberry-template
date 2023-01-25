@@ -1,0 +1,19 @@
+.hero-container {
+  background-image: url('../../assets//img/hero-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin-top: -90px;
+  position: relative;
+}
+
+.hero-title {
+  color: white;
+  font-size: 4rem;
+  word-spacing: 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
