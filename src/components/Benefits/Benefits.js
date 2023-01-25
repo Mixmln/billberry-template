@@ -7,7 +7,7 @@ import eye from '../../assets/img/eye.png'
 
 function Benefits() {
   return (
-    <div className="benefits-section">
+    <section className="benefits-section">
       <Stack direction="row" spacing={2}>
         <div className='container benefits'>
           <div className="think">
@@ -44,7 +44,7 @@ function Benefits() {
           </div>
         </div>
       </Stack>
-    </div>
+    </section>
   )
 }
 
