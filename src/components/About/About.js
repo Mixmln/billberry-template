@@ -9,10 +9,13 @@ function About() {
         <h4 className='about-title'>WE ARE BILBERRY</h4>
         <p className='about-desc'>We design and develop websites, apps and digital experiences that help our clients grow, innovate, and transform. We listen, learn and understand before we build. We identify your goals together, then use our expertise to find that sweet spot of realistic and impactful.</p>
       </div>
-      <Stack className='logos-flex container' direction='row' sx={{
-        justifyContent: 'space-between',
-        alignItems: 'center'
-      }}>
+      <Stack
+        className='logos-flex container'
+        direction='row'
+        sx={{
+          justifyContent: 'space-between',
+          alignItems: 'center'
+        }}>
         <img className='logo-pepsico' src="https://bilberrry.com/wp-content/uploads/2020/05/pepsico-dark.svg" alt="" />
         <img className='logo-chipotle' src="https://bilberrry.com/wp-content/uploads/2020/05/chipotle-dark.svg" alt="" />
         <img className='logo-delta' src="https://bilberrry.com/wp-content/uploads/2020/05/delta-dark.svg" alt="" />
