@@ -5,6 +5,7 @@ import Nav from './components/Nav/Nav';
 import About from './components/About/About';
 import Hero from './components/Hero/Hero';
 import PascoSection from './components/Pasco/PascoSection';
+import LifeSection from './components/Life/LifeSection';
 
 function App() {
   const dispatch = useDispatch();
@@ -13,10 +14,10 @@ function App() {
     <Nav />
     <Hero />
     <div className="container">
-
       <About />
     </div>
     <PascoSection></PascoSection>
+    <LifeSection />
   </div>;
 }
 

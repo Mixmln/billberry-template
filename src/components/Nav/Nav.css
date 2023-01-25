@@ -36,3 +36,7 @@ ul li:hover {
   text-decoration-color: white;
   text-underline-offset: 10px;
 }
+
+.MuiSwitch-track {
+  background-color: white !important;
+}
