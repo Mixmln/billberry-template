@@ -1,0 +1,24 @@
+.ask {
+  border-bottom: 1px solid white;
+}
+
+.ask-section {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 0;
+}
+
+.ask-section h3 {
+  font-size: 2rem;
+}
+
+.ask-p {
+  text-align: left;
+  width: 35%;
+  font-size: 1.1rem;
+}
+
+.ask-p p {
+  margin-bottom: 2rem;
+}

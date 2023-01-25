@@ -10,6 +10,7 @@ import LifeSection from './components/Life/LifeSection';
 
 import Blueprint from './components/BlueprintRegistry/Blueprint';
 import Benefits from './components/Benefits/Benefits';
+import Ask from './components/Ask/Ask';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
     <LifeSection />
     <Blueprint></Blueprint>
     <Benefits />
+    <Ask />
 
   </div>;
 }
