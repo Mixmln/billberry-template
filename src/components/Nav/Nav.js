@@ -1,8 +1,60 @@
 import React from 'react'
-import { Switch } from '@mui/material'
+import { FormControlLabel, styled, Switch } from '@mui/material'
 import './Nav.css'
 import bilberry from '../../assets/img/bilberrry-logo.png'
 import { useState } from 'react'
+
+const IOSSwitch = styled((props) => (
+  <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
+))(({ theme }) => ({
+  width: 40,
+  height: 24,
+  padding: 0,
+  '& .MuiSwitch-switchBase': {
+    padding: 0,
+    margin: 0.5,
+    transitionDuration: '500ms',
+    '&.Mui-checked': {
+      transform: 'translateX(16px)',
+      transition: '0.5s ease in out',
+      color: 'rgba(0, 0, 0, 0.616)',
+      '& + .MuiSwitch-track': {
+        backgroundColor: theme.palette.mode === 'dark' ? 'gray' : 'black',
+        opacity: 0.7,
+        border: 0,
+      },
+      '&.Mui-disabled + .MuiSwitch-track': {
+        opacity: 0.5,
+      },
+    },
+    '&.Mui-focusVisible .MuiSwitch-thumb': {
+      color: '#33cf4d',
+      border: '6px solid #fff',
+    },
+    '&.Mui-disabled .MuiSwitch-thumb': {
+      color:
+        theme.palette.mode === 'light'
+          ? theme.palette.grey[100]
+          : theme.palette.grey[600],
+    },
+    '&.Mui-disabled + .MuiSwitch-track': {
+      opacity: theme.palette.mode === 'light' ? 0.7 : 0.3,
+    },
+  },
+  '& .MuiSwitch-thumb': {
+    boxSizing: 'border-box',
+    width: 22,
+    height: 22,
+  },
+  '& .MuiSwitch-track': {
+    borderRadius: 26 / 2,
+    backgroundColor: theme.palette.mode === 'light' ? 'black' : 'gray',
+    opacity: 1,
+    transition: theme.transitions.create(['background-color'], {
+      duration: 500,
+    }),
+  },
+}));
 
 function Nav() {
 
@@ -14,10 +66,7 @@ function Nav() {
     <div className='nav-container'>
       <div className={` ${open ? 'dropdown-content-opened' : 'dropdown-content-closed'}`}>
         <div className='container'>
-
-
         </div>
-
       </div>
       <nav className='container'>
         <img className='nav-logo' src={bilberry} alt="logo" />
@@ -28,7 +77,11 @@ function Nav() {
           <li>Notes</li>
           <li>About</li>
           <li>Contact</li>
-          <Switch />
+          {/* <Switch /> */}
+          <FormControlLabel
+            control={<IOSSwitch defaultChecked />}
+
+          />
         </ul>
       </nav>
 

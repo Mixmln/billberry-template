@@ -50,6 +50,14 @@ ul li:hover {
   background-color: white !important;
 }
 
+.black {
+  color: black;
+}
+
+.Mui-checked {
+  color: red;
+}
+
 .dropdown-content-closed {
   display: none;
   top: 0;

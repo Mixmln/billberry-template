@@ -31,13 +31,22 @@
 
 /* LOGOS */
 
-.logo-pepsico,
-.logo-delta,
 .logo-gofoundme {
   height: 2rem;
 }
 
-.logo-chipotle,
 .logo-uni {
   height: 4rem;
+}
+
+.logo-pepsico {
+  height: 2.8rem;
+}
+
+.logo-chipotle {
+  height: 4.7rem;
+}
+
+.logo-delta {
+  height: 1.8rem;
 }
