@@ -1,25 +1,47 @@
 .life-section {
-  color: white;
-  width: 100vw;
+  width: 100%;
+  height: 700px;
   padding: 100px 0;
 }
 
+.life-section img {
+  width: 50%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.life-desc img {
+  width: fit-content;
+  height: 50px;
+  object-fit: contain;
+}
+
 .life-desc {
-  padding: 10rem;
-  text-align: left;
+  width: 40%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  justify-content: center;
+}
+
+.life-desc h5 {
+  font-size: 18px;
 }
 
 .life-desc h2 {
-  font-size: 3rem;
+  margin-left: -5px;
+  font-size: 70px;
+  font-weight: normal;
+  text-align: left;
+  line-height: 1;
+  width: 80%;
 }
 
-.life-logo {
-  height: 80px;
-}
-
-
-.life-img {
-  width: 50%;
-  height: 702px;
-  object-fit: cover;
+.life-desc p {
+  font-size: 17px;
+  line-height: 1.6;
+  width: 65%;
+  text-align: left;
 }
