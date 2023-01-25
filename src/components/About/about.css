@@ -1,0 +1,52 @@
+.about-section {
+  margin-top: 400px;
+  margin-bottom: 50px;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  color: white;
+  margin-bottom: 200px;
+}
+
+.about-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.about-desc {
+  width: 50%;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.logos-flex img {
+  object-fit: cover;
+}
+
+/* LOGOS */
+
+.logo-pepsico {
+  height: 55px;
+}
+
+.logo-chipotle {
+  height: 90px;
+}
+
+.logo-delta {
+  height: 40px;
+}
+
+.logo-uni {
+  height: 90px;
+}
+
+.logo-gofoundme {
+  height: 45px;
+}

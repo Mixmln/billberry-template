@@ -1,6 +1,17 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
 .App {
   text-align: center;
   font-family: 'Roboto Slab', serif;
+  background-color: black;
+  height: max-content;
 }
 
 .App-logo {
@@ -30,7 +41,7 @@
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1700px;
   margin: 0 auto;
 }
 
