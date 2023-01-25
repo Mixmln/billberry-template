@@ -27,7 +27,7 @@ function Ask() {
     <section className='ask'>
       <ThemeProvider theme={theme}>
         <Stack direction="row">
-          <div className="container ask-section">
+          <div className="container ask-container ask-section">
             <h3>WE ASK WHY, NOT WHAT</h3>
             <div className='ask-p'>
               <p>When we agree to build something, we’re agreeing to build the future of your business. So we always start by asking: Why?</p>

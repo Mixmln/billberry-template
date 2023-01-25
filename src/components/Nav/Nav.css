@@ -12,10 +12,10 @@ nav {
 }
 
 .nav-logo {
-  height: 90px;
+  height: 30px;
 }
 
-ul {
+.nav-container ul {
   color: white;
   list-style: none;
   display: flex;
@@ -23,7 +23,7 @@ ul {
   gap: 2.3rem;
 }
 
-ul li {
+.nav-container ul li {
   cursor: pointer;
   font-size: 0.95rem;
   text-decoration: none;
@@ -31,7 +31,7 @@ ul li {
   transition: 0.3s ease-in-out;
 }
 
-ul li:hover {
+.nav-container ul li:hover {
   text-decoration: underline;
   text-decoration-color: white;
   text-underline-offset: 10px;

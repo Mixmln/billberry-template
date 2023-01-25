@@ -1,3 +1,7 @@
+.ask-container {
+  max-width: 1200px;
+}
+
 .ask {
   border-bottom: 1px solid white;
 }
@@ -5,7 +9,7 @@
 .ask-section {
   color: white;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 100px 0;
 }
 
