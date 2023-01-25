@@ -21,9 +21,7 @@ function App() {
       <About />
     </div>
     <PascoSection></PascoSection>
-
     <LifeSection />
-
     <Blueprint></Blueprint>
 
   </div>;

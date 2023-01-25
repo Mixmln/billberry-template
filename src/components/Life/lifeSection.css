@@ -1,7 +1,8 @@
 .life-section {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  height: 700px;
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 .life-section img {
