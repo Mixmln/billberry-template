@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Nav from './components/Nav/Nav';
 import About from './components/About/About';
 import Hero from './components/Hero/Hero';
+import PascoSection from './components/Pasco/PascoSection';
 
 function App() {
   const dispatch = useDispatch();
@@ -14,8 +15,8 @@ function App() {
     <div className="container">
 
       <About />
-      <h3>d</h3>
     </div>
+    <PascoSection></PascoSection>
   </div>;
 }
 
