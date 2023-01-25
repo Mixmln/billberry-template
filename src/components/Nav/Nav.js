@@ -6,7 +6,7 @@ import bilberry from '../../assets/img/bilberrry-logo.png'
 function Nav() {
   return (
     <div className='nav-container'>
-      <nav>
+      <nav className='container'>
         <img src={bilberry} alt="logo" />
         <ul>
           <li>Services</li>

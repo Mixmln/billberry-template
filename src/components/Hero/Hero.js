@@ -1,8 +1,13 @@
 import React from 'react'
+import Nav from '../Nav/Nav'
+import './Hero.css'
 
 function Hero() {
   return (
-    <div>Hero</div>
+    <div className='hero-container'>
+      <h1 className='hero-title'>YOUR DIGITAL FUTURE
+        WELL BUILT</h1>
+    </div>
   )
 }
 
