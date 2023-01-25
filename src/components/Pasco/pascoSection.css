@@ -12,4 +12,37 @@
   object-fit: cover;
 }
 
-.pasco-desc {}
+.pasco-desc img {
+  width: fit-content;
+  height: 60px;
+  object-fit: contain;
+}
+
+.pasco-desc {
+  width: 40%;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+}
+
+.pasco-desc h5 {
+  font-size: 24px;
+}
+
+.pasco-desc h2 {
+  margin-left: -5px;
+  font-size: 86px;
+  font-weight: normal;
+  text-align: left;
+  line-height: 1;
+  width: 80%;
+}
+
+.pasco-desc p {
+  font-size: 22px;
+  line-height: 1.6;
+  width: 65%;
+  text-align: left;
+}
