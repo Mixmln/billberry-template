@@ -1,7 +1,7 @@
-import { Button, Stack } from '@mui/material'
+import { Button, Stack } from '@mui/material';
 import React from 'react'
-import '../Pasco/pascoSection.css'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import '../Pasco/pascoSection.css'
 
 const theme = createTheme({
   status: {
@@ -22,20 +22,19 @@ const theme = createTheme({
   },
 });
 
-function PascoSection() {
+function Blueprint() {
   return (
     <section className='pasco-section'>
       <ThemeProvider theme={theme}>
         <Stack direction='row' sx={{
-          gap: 15,
-          alignItems: 'center'
+          gap: 15
         }}>
-          <img src="https://bilberrry.com/wp-content/uploads/2020/06/50514895-2306364546042677-1195809454591836160-o@2x.jpg" alt="" />
+          <img src="https://bilberrry.com/wp-content/uploads/2020/06/50514895-2306364546042677-1195809454591836160-o-copy@2x.jpg" alt="" />
           <div className='pasco-desc'>
-            <img src="https://bilberrry.com/wp-content/uploads/2020/06/pasco-logo-white.svg" alt="" />
-            <h5>ASKED US:</h5>
-            <h2>"WE NEED TO INNOVATE. WHAT NOW?"</h2>
-            <p>Our favorite question. When you know what you want, but not what  you want, we go all-in to uncover the strategies that will get your business where you want it to go.</p>
+            <img src="https://bilberrry.com/wp-content/uploads/2020/06/blueprint-logo-white.svg" alt="" />
+            <h5>WONDERED:</h5>
+            <h2>"HOW LONG WILL THIS TAKE?"</h2>
+            <p>The truth is, it depends. We typically host a few discovery workshops, followed by a series of sprints from proof of concept to production-ready. We're agile, so you will be too.</p>
             <Button variant='outlined' sx={{
               fontSize: 14,
               width: '65%',
@@ -44,7 +43,7 @@ function PascoSection() {
               lineHeight: 1.5
             }}
               color='justWhite'
-            >Here's how we helped a legacy business digitally transform its operations.</Button>
+            >Behind the scenes of a 4-year partnership.</Button>
           </div>
         </Stack>
       </ThemeProvider>
@@ -52,4 +51,4 @@ function PascoSection() {
   )
 }
 
-export default PascoSection
+export default Blueprint
