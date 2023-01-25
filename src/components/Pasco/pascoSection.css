@@ -8,32 +8,33 @@
 
 .pasco-section img {
   width: 50%;
-  height: 702px;
+  height: 600px;
   object-fit: cover;
 }
 
 .pasco-desc img {
   width: fit-content;
-  height: 60px;
+  height: 50px;
   object-fit: contain;
 }
 
 .pasco-desc {
   width: 40%;
   display: flex;
-  gap: 30px;
+  gap: 20px;
   flex-direction: column;
   align-items: flex-start;
   color: white;
+  justify-content: center;
 }
 
 .pasco-desc h5 {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .pasco-desc h2 {
   margin-left: -5px;
-  font-size: 86px;
+  font-size: 70px;
   font-weight: normal;
   text-align: left;
   line-height: 1;
@@ -41,7 +42,7 @@
 }
 
 .pasco-desc p {
-  font-size: 22px;
+  font-size: 17px;
   line-height: 1.6;
   width: 65%;
   text-align: left;
