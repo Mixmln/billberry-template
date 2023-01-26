@@ -62,16 +62,13 @@ function Nav() {
 
   const [open, setOpen] = useState(null)
 
-
-  console.log('open ===', open);
-
   return (
     <div className='nav-container'>
       <div className={` ${open === null ? 'dropdown-content-hidden' : (open ? 'dropdown-content-opened' : 'dropdown-content-closed')}`}>
         <div className='container'>
 
           <div className="services-container">
-            <div>
+            <div  >
               <h3>Digital Transformation</h3>
               <p>We partner with CTOs and CIOs to co-create and execute long-term strategies that increase sales, brand awareness, and operational efficiency.</p>
             </div>
