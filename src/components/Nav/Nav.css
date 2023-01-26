@@ -50,6 +50,26 @@ ul li:hover {
   background-color: white !important;
 }
 
+
+.services-container {
+  text-align: left;
+  color: white;
+  display: flex;
+  gap: 3rem;
+}
+
+.services-container * div {
+  width: 40%;
+}
+
+.services-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.services-container p {
+  font-size: 0.9rem;
+
 .black {
   color: black;
 }
@@ -67,18 +87,19 @@ ul li:hover {
   width: 100%;
   animation-name: drop;
   animation-duration: 3s;
+  z-index: -1;
 }
 
 .dropdown-content-opened {
-  z-index: 1;
+  z-index: -1;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  top: 90px;
+  top: 0;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.616);
-  height: 300px;
+  height: 390px;
   width: 100%;
   animation-name: drop;
   animation-duration: 0.8s;
@@ -90,6 +111,6 @@ ul li:hover {
   }
 
   to {
-    height: 300px;
+    height: 390px;
   }
 }
