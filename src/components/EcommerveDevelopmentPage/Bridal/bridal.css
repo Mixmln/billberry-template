@@ -1,20 +1,22 @@
 .line {
-  width: 170%;
+  width: 160%;
   height: 2px;
   background-color: rgba(255, 255, 255, 0.699);
   border-radius: 5px;
+  transform: translateX(18%);
 }
 
 .bridal-title {
   font-size: 3.9rem;
   font-weight: 500;
   text-align: left;
-  width: 80%;
+  width: 100%;
   margin-bottom: 0;
+  line-height: 1;
 }
 
 .bridal-text {
-  width: 80%;
+  width: 100%;
   text-align: left;
   font-size: 20px;
   letter-spacing: 1px;
@@ -24,21 +26,37 @@
 .bridal-nav-button {
   display: flex;
   align-items: center;
-  width: 170%;
+  width: 150%;
+  transform: translateX(18%);
   gap: 10px;
+  cursor: pointer;
 }
 
 .bridal-nav-button p {
   font-size: 19px;
   letter-spacing: 1px;
-  padding: 40px 20px;
-  width: 100%;
+  padding: 40px 10px;
+  width: 150%;
   text-align: left;
   margin-right: 10px;
-
 }
 
-.bridal-nav-button:hover {
-  gap: 0;
-  transition: 0.2s ease-in-out;
+
+.bridal-nav-button:hover .slide-left {
+  animation: slide-left 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+.bridal-section-border {
+  padding-bottom: 80px;
+  border-bottom: 2px solid white;
 }
