@@ -86,6 +86,7 @@ ul li:hover {
   font-size: 0.9rem;
 }
 
+
 .black {
   color: black;
 }
@@ -95,14 +96,16 @@ ul li:hover {
 }
 
 .dropdown-content-closed {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
   top: 0;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.292);
-  height: 0px;
+  background-color: rgba(0, 0, 0, 0.616);
+  height: 390px;
   width: 100%;
-  animation-name: drop;
-  animation-duration: 3s;
+  animation: slide-out-top 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   z-index: -1;
 }
 
@@ -121,12 +124,31 @@ ul li:hover {
   animation-duration: 0.8s;
 }
 
+.dropdown-content-closing {
+  animation-name: closing;
+  animation-duration: 0.8s;
+}
+
 @keyframes drop {
   from {
     height: 0px;
+    opacity: 0;
   }
 
   to {
-    height: 350px;
+    height: 390px;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out-top {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-1000px);
+    opacity: 0;
   }
 }

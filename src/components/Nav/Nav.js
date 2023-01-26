@@ -102,7 +102,6 @@ function Nav() {
           {/* <Switch /> */}
           <FormControlLabel
             control={<IOSSwitch defaultChecked />}
-
           />
         </ul>
       </nav>
