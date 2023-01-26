@@ -1,6 +1,6 @@
 import { Button, Stack } from '@mui/material'
 import React from 'react'
-import '../Pasco/pascoSection.css'
+import './pascoSection.css'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const theme = createTheme({

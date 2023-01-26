@@ -1,9 +1,9 @@
 import { Stack } from '@mui/system'
 import React from 'react'
 import './benefits.css'
-import think from '../../assets/img/think.png'
-import build from '../../assets/img/build.png'
-import eye from '../../assets/img/eye.png'
+import think from '../../../assets/img/think.png'
+import build from '../../../assets/img/build.png'
+import eye from '../../../assets/img/eye.png'
 
 function Benefits() {
   return (

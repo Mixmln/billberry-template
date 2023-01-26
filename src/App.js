@@ -6,12 +6,14 @@ import EcommerceDevelopmentPage from './pages/EcommerceDevelopmentPage';
 function App() {
 
   return (
+
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/ecommerce-development' element={<EcommerceDevelopmentPage />} />
       </Routes>
     </BrowserRouter >
+
   )
 }
 

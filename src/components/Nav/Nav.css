@@ -124,6 +124,10 @@ ul li:hover {
   animation-duration: 0.8s;
 }
 
+.dropdown-content-hidden {
+  display: none;
+}
+
 .dropdown-content-closing {
   animation-name: closing;
   animation-duration: 0.8s;

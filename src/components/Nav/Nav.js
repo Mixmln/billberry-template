@@ -3,7 +3,11 @@ import { FormControlLabel, styled, Switch } from '@mui/material'
 import './Nav.css'
 import bilberry from '../../assets/img/bilberrry-logo.png'
 import { useState } from 'react'
+
 import { useNavigate } from 'react-router-dom'
+
+import { useEffect } from 'react'
+
 
 const IOSSwitch = styled((props) => (
   <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
@@ -57,17 +61,18 @@ const IOSSwitch = styled((props) => (
   },
 }));
 
+
 function Nav() {
+
 
   const nav = useNavigate()
 
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(null)
 
-  console.log('open ===', open);
 
   return (
     <div className='nav-container'>
-      <div className={` ${open ? 'dropdown-content-opened' : 'dropdown-content-closed'}`}>
+      <div className={` ${open === null ? 'dropdown-content-hidden' : (open ? 'dropdown-content-opened' : 'dropdown-content-closed')}`}>
         <div className='container'>
 
           <div className="services-container">
