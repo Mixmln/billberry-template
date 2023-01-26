@@ -8,6 +8,7 @@ function Approach() {
     <Box sx={{
       margin: '0px 90px',
       marginTop: 12,
+      paddingBottom: 12
     }}>
       <Grid2 container spacing={2}>
         <Grid2 xs={3} sx={{

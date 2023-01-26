@@ -1,0 +1,44 @@
+.line {
+  width: 170%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.699);
+  border-radius: 5px;
+}
+
+.bridal-title {
+  font-size: 3.9rem;
+  font-weight: 500;
+  text-align: left;
+  width: 80%;
+  margin-bottom: 0;
+}
+
+.bridal-text {
+  width: 80%;
+  text-align: left;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+.bridal-nav-button {
+  display: flex;
+  align-items: center;
+  width: 170%;
+  gap: 10px;
+}
+
+.bridal-nav-button p {
+  font-size: 19px;
+  letter-spacing: 1px;
+  padding: 40px 20px;
+  width: 100%;
+  text-align: left;
+  margin-right: 10px;
+
+}
+
+.bridal-nav-button:hover {
+  gap: 0;
+  transition: 0.2s ease-in-out;
+}
