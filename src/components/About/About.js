@@ -13,8 +13,9 @@ function About() {
         className='logos-flex container'
         direction='row'
         sx={{
-          justifyContent: 'space-between',
-          alignItems: 'center'
+          justifyContent: 'space-evenly',
+          alignItems: 'center',
+          marginBottom: '82px'
         }}>
         <img className='logo-pepsico' src="https://bilberrry.com/wp-content/uploads/2020/05/pepsico-dark.svg" alt="" />
         <img className='logo-chipotle' src="https://bilberrry.com/wp-content/uploads/2020/05/chipotle-dark.svg" alt="" />

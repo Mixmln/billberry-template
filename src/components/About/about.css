@@ -13,15 +13,15 @@
 }
 
 .about-title {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
 }
 
 .about-desc {
-  width: 50%;
+  width: 53%;
   line-height: 1.5;
   letter-spacing: 1px;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 300;
 }
 
@@ -31,13 +31,22 @@
 
 /* LOGOS */
 
-.logo-pepsico,
-.logo-delta,
 .logo-gofoundme {
   height: 2rem;
 }
 
-.logo-chipotle,
 .logo-uni {
   height: 4rem;
+}
+
+.logo-pepsico {
+  height: 2.8rem;
+}
+
+.logo-chipotle {
+  height: 4.7rem;
+}
+
+.logo-delta {
+  height: 1.8rem;
 }
