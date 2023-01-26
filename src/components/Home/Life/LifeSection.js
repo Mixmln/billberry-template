@@ -1,7 +1,7 @@
 import { Button, createTheme, Stack, ThemeProvider } from '@mui/material'
 import React from 'react'
 import './lifeSection.css'
-import logo from '../../assets/img/tlycs-logo.png'
+import logo from '../../../assets/img/tlycs-logo.png'
 
 const theme = createTheme({
   status: {
