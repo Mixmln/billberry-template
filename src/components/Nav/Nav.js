@@ -74,7 +74,6 @@ function Nav() {
     <div className='nav-container'>
       <div className={` ${open === null ? 'dropdown-content-hidden' : (open ? 'dropdown-content-opened' : 'dropdown-content-closed')}`}>
         <div className='container'>
-
           <div className="services-container">
             <div>
               <h3 onClick={() => nav('/digital-transformation')}>Digital Transformation</h3>
@@ -113,7 +112,6 @@ function Nav() {
           />
         </ul>
       </nav>
-
     </div>
   )
 }
