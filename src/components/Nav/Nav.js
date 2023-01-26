@@ -106,7 +106,10 @@ function Nav() {
         </div>
       </div>
       <nav className='container'>
-        <img onClick={() => nav('/')} className='nav-logo' src={bilberry} alt="logo" />
+        <img onClick={() => {
+          dispatch(setPage('home'))
+          nav('/')
+        }} className='nav-logo' src={bilberry} alt="logo" />
         <ul>
           <li onClick={() => setOpen(!open)} className={`${servicesPage === 'services' ? 'selected-page' : ''}`}>Services</li>
           <li onClick={() => handlePage('work', '/work')} className={`${servicesPage === 'work' ? 'selected-page' : ''}`}>Work</li>
