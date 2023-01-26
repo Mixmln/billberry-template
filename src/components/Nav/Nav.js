@@ -76,7 +76,7 @@ function Nav() {
         <div className='container'>
 
           <div className="services-container">
-            <div>
+            <div  >
               <h3>Digital Transformation</h3>
               <p>We partner with CTOs and CIOs to co-create and execute long-term strategies that increase sales, brand awareness, and operational efficiency.</p>
             </div>
