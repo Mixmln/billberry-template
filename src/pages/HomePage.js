@@ -8,13 +8,15 @@ import Hero from '../components/Hero/Hero'
 import Nav from '../components/Nav/Nav'
 import PascoSection from '../components/Pasco/PascoSection'
 import LifeSection from '../components/Life/LifeSection'
+import image from '../assets/img/hero-bg.jpg'
 
 function HomePage() {
   return (
     <div>
       <div className='App'>
         <Nav />
-        <Hero />
+        <Hero title='YOUR DIGITAL FUTURE
+        WELL BUILT' mainImage={image} />
         <About />
         <PascoSection />
         <LifeSection />

@@ -1,8 +1,8 @@
 .hero-container {
-  background-image: url('../../assets//img/hero-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
   height: 100vh;
   margin-top: -90px;
   position: relative;

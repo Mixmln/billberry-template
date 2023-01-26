@@ -2,11 +2,12 @@ import React from 'react'
 import Nav from '../Nav/Nav'
 import './Hero.css'
 
-function Hero() {
+function Hero({ mainImage, title }) {
   return (
-    <div className='hero-container'>
-      <h1 className='hero-title'>YOUR DIGITAL FUTURE
-        WELL BUILT</h1>
+    <div className='hero-container' style={{
+      backgroundImage: `url(${mainImage})`
+    }}>
+      <h1 className='hero-title'>{title}</h1>
     </div>
   )
 }

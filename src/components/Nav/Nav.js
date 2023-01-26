@@ -3,6 +3,7 @@ import { FormControlLabel, styled, Switch } from '@mui/material'
 import './Nav.css'
 import bilberry from '../../assets/img/bilberrry-logo.png'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const IOSSwitch = styled((props) => (
   <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
@@ -58,6 +59,8 @@ const IOSSwitch = styled((props) => (
 
 function Nav() {
 
+  const nav = useNavigate()
+
   const [open, setOpen] = useState(false)
 
   console.log('open ===', open);
@@ -73,7 +76,7 @@ function Nav() {
               <p>We partner with CTOs and CIOs to co-create and execute long-term strategies that increase sales, brand awareness, and operational efficiency.</p>
             </div>
             <div>
-              <h3>Ecommerce
+              <h3 onClick={() => nav('/ecommerce-development')}>Ecommerce
                 Development</h3>
               <p>Flexible and intelligent B2B and B2C, omnichannel, and mobile commerce solutions that center your business.</p>
             </div>
@@ -91,7 +94,7 @@ function Nav() {
         </div>
       </div>
       <nav className='container'>
-        <img className='nav-logo' src={bilberry} alt="logo" />
+        <img onClick={() => nav('/')} className='nav-logo' src={bilberry} alt="logo" />
         <ul>
           <li onClick={() => setOpen(!open)}>Services</li>
           <li>Work</li>
