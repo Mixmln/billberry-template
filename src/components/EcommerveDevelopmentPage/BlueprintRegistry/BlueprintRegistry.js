@@ -7,13 +7,13 @@ import '../BlueprintRegistry/blueprint.css'
 
 function BlueprintRegistry() {
   return (
-    <div className='container'>
+    <div className='container blueprint-section'>
       <Grid2 sx={{
         color: 'white',
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'space-between',
-        gap: 3
+        justifyContent: 'center',
+        gap: 8
       }}>
         <Grid2 xs={6}>
           <img src="https://bilberrry.com/wp-content/uploads/2022/08/22_BB_InlinenIMG_BluePrintRegistry.png" alt="" />
@@ -30,15 +30,16 @@ function BlueprintRegistry() {
             REGISTRY</h2>
           <p className='bridal-text'>We built a custom ecomm platform for Blueprint that did this thing, that thing, and this other cool thing too. All together, it was a new way to do ecomm and successfully managed to do this notable feature, this notable feature, and this notable feature.</p>
 
-          <div className='blueprint-line'></div>
-
-          <div className='blueprint-nav-button'>
-            <p>Learn more about our approach</p>
-            <div>
-              <EastOutlinedIcon className='slide-left' />
+          <div className='w100'>
+            <div className='blueprint-line'></div>
+            <div className='blueprint-nav-button'>
+              <p>Learn more about our approach</p>
+              <div>
+                <EastOutlinedIcon className='slide-left' />
+              </div>
             </div>
+            <div className='blueprint-line'></div>
           </div>
-          <div className='blueprint-line'></div>
 
         </Grid2>
       </Grid2>

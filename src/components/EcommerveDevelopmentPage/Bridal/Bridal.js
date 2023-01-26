@@ -14,7 +14,8 @@ function Bridal() {
             color: 'white',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'space-between'
+            justifyContent: 'space-around',
+
           }}>
             <Grid2 direction='row' xs={6} sx={{
               width: '45%',

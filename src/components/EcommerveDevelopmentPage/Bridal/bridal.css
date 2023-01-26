@@ -1,3 +1,7 @@
+.blueprint-section {
+  padding: 90px 0;
+}
+
 .line {
   width: 160%;
   height: 2px;
@@ -43,6 +47,10 @@
 
 
 .bridal-nav-button:hover .slide-left {
+  animation: slide-left 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.blueprint-nav-button:hover .slide-left {
   animation: slide-left 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 

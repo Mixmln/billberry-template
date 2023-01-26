@@ -13,3 +13,16 @@
   gap: 10px;
   cursor: pointer;
 }
+
+.blueprint-nav-button p {
+  font-size: 19px;
+  letter-spacing: 1px;
+  padding: 40px 10px;
+  width: 150%;
+  text-align: left;
+  margin-right: 10px;
+}
+
+.w100 {
+  width: 100%;
+}

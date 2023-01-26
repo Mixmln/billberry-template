@@ -1,0 +1,55 @@
+.notes-section {
+    width: 100%;
+    height: max-content;
+    padding: 130px 0 100px 0;
+    color: white;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.808);
+}
+
+.notes-line {
+    width: 105%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.699);
+    border-radius: 5px;
+    transform: translateX(-5%);
+}
+
+.notes-title {
+    font-size: 3.7rem;
+    text-align: left;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.notes-nav-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.notes-nav-button p {
+    font-weight: normal;
+    font-size: 1.3rem;
+    letter-spacing: 0px;
+    padding: 42px 20px;
+    width: 150%;
+    text-align: left;
+    margin-right: 10px;
+    transform: translateX(-7%);
+}
+
+.notes-nav-button:hover .slide-left {
+    animation: slide-left 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-10px);
+    }
+}
