@@ -7,6 +7,8 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 import { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { setPage } from '../../store/appStore'
 
 
 const IOSSwitch = styled((props) => (
@@ -64,11 +66,17 @@ const IOSSwitch = styled((props) => (
 
 function Nav() {
 
-
+  const dispatch = useDispatch()
   const nav = useNavigate()
 
   const [open, setOpen] = useState(null)
 
+  const { servicesPage } = useSelector((state) => state.appStore)
+
+  const handlePage = (page, link) => {
+    dispatch(setPage(page));
+    nav(link);
+  }
 
   return (
     <div className='nav-container'>
@@ -76,21 +84,21 @@ function Nav() {
         <div className='container'>
           <div className="services-container">
             <div>
-              <h3 onClick={() => nav('/digital-transformation')}>Digital Transformation</h3>
+              <h3 onClick={() => handlePage('services', '/digital-transformation')}>Digital Transformation</h3>
               <p>We partner with CTOs and CIOs to co-create and execute long-term strategies that increase sales, brand awareness, and operational efficiency.</p>
             </div>
             <div>
-              <h3 onClick={() => nav('/ecommerce-development')}>Ecommerce
+              <h3 onClick={() => handlePage('services', '/ecommerce-development')}>Ecommerce
                 Development</h3>
               <p>Flexible and intelligent B2B and B2C, omnichannel, and mobile commerce solutions that center your business.</p>
             </div>
             <div>
-              <h3>Custom Software
+              <h3 onClick={() => handlePage('services', '/custom-software')}>Custom Software
                 Development</h3>
               <p>Web apps, mobile apps and interactive experiences we help you take from ideation to implementation.</p>
             </div>
             <div>
-              <h3>Website Design
+              <h3 onClick={() => handlePage('services', '/web-design')}>Website Design
                 & Development</h3>
               <p>Beautifully designed and collaboratively concepted websites that deliver best-in-class experiences to your users.</p>
             </div>
@@ -100,12 +108,12 @@ function Nav() {
       <nav className='container'>
         <img onClick={() => nav('/')} className='nav-logo' src={bilberry} alt="logo" />
         <ul>
-          <li onClick={() => setOpen(!open)}>Services</li>
-          <li>Work</li>
-          <li>Approach</li>
-          <li>Notes</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li onClick={() => setOpen(!open)} className={`${servicesPage === 'services' ? 'selected-page' : ''}`}>Services</li>
+          <li onClick={() => handlePage('work', '/work')} className={`${servicesPage === 'work' ? 'selected-page' : ''}`}>Work</li>
+          <li onClick={() => handlePage('approach', '/approach')} className={`${servicesPage === 'approach' ? 'selected-page' : ''}`}>Approach</li>
+          <li onClick={() => handlePage('notes', '/notes')} className={`${servicesPage === 'notes' ? 'selected-page' : ''}`}>Notes</li>
+          <li onClick={() => handlePage('about', '/about')} className={`${servicesPage === 'about' ? 'selected-page' : ''}`}>About</li>
+          <li onClick={() => handlePage('contact', '/contact')} className={`${servicesPage === 'contact' ? 'selected-page' : ''}`}>Contact</li>
           {/* <Switch /> */}
           <FormControlLabel
             control={<IOSSwitch defaultChecked />}
