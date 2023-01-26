@@ -40,6 +40,7 @@ ul li:hover {
 }
 
 /* bus reikalingas */
+
 .selected-page {
   text-decoration: underline;
   text-decoration-color: white;
@@ -49,7 +50,6 @@ ul li:hover {
 .MuiSwitch-track {
   background-color: white !important;
 }
-
 
 .services-container {
   margin-top: 30px;
@@ -66,12 +66,7 @@ ul li:hover {
   align-items: flex-start;
   justify-content: space-between;
   gap: 10px;
-}
 
-.services-container h3:hover {
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-  color: rgb(228, 228, 228);
 }
 
 .services-container h3 {
@@ -80,6 +75,14 @@ ul li:hover {
   margin-bottom: 0.5rem;
   line-height: 1;
   margin-top: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.services-container h3:hover {
+  cursor: pointer;
+  color: rgb(228, 228, 228);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .services-container p {

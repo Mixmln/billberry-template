@@ -11,7 +11,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<HomePage />} />
-        <Route path='/digital-transformation/' element={<DigitalTransformationPage />} />
+        <Route path='/digital-transformation' element={<DigitalTransformationPage />} />
         <Route path='/ecommerce-development' element={<EcommerceDevelopmentPage />} />
       </Routes>
     </BrowserRouter >
