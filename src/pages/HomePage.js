@@ -6,15 +6,18 @@ import Blueprint from '../components/Home/BlueprintRegistry/Blueprint'
 import Footer from '../components/Footer/Footer'
 import Hero from '../components/Hero/Hero'
 import Nav from '../components/Nav/Nav'
+import image from '../assets/img/hero-bg.jpg'
 import PascoSection from '../components/Home/Pasco/PascoSection'
 import LifeSection from '../components/Home/Life/LifeSection'
+
 
 function HomePage() {
   return (
     <div>
       <div className='App'>
         <Nav />
-        <Hero />
+        <Hero title='YOUR DIGITAL FUTURE
+        WELL BUILT' mainImage={image} />
         <About />
         <PascoSection />
         <LifeSection />
