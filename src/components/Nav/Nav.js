@@ -94,7 +94,7 @@ function Nav() {
 							<p>Web apps, mobile apps and interactive experiences we help you take from ideation to implementation.</p>
 						</div>
 						<div>
-							<h3 onClick={() => handlePage("services", "/web-design")}>Website Design & Development</h3>
+							<h3 onClick={() => handlePage("services", "/website-design-development")}>Website Design & Development</h3>
 							<p>Beautifully designed and collaboratively concepted websites that deliver best-in-class experiences to your users.</p>
 						</div>
 					</div>

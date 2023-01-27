@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import DigitalTransformationPage from "./pages/DigitalTransformationPage";
 import EcommerceDevelopmentPage from "./pages/EcommerceDevelopmentPage";
 import CustomSoftwarePage from "./pages/CustomSoftwarePage";
+import WebsiteDesignPage from "./pages/WebsiteDesignPage";
 
 function App() {
 	return (
@@ -24,6 +25,10 @@ function App() {
 				<Route
 					path="/custom-software"
 					element={<CustomSoftwarePage />}
+				/>
+				<Route
+					path="/website-design-development"
+					element={<WebsiteDesignPage />}
 				/>
 			</Routes>
 		</BrowserRouter>
