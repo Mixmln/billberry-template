@@ -1,0 +1,9 @@
+.design-projects-container .apple {
+  width: 55%;
+  float: right
+}
+
+.design-projects-container h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
