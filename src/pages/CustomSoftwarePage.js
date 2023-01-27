@@ -1,4 +1,5 @@
 import React from "react";
+import Works from "../components/CustomSoftware/RecentWorks/Works";
 import SoftwareDevServices from "../components/CustomSoftware/SoftwareDevServices/SoftwareDevServices";
 import Hero from "../components/Hero/Hero";
 import Nav from "../components/Nav/Nav";
@@ -12,6 +13,7 @@ function CustomSoftwarePage() {
 				title="WHAT´S POSSIBLE WITH THE RIGHT PRODUCT?"
 			></Hero>
 			<SoftwareDevServices></SoftwareDevServices>
+			<Works></Works>
 		</div>
 	);
 }

@@ -1,81 +1,110 @@
 import { Box, Stack } from "@mui/material";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import React from "react";
+import "../SoftwareDevServices/softwareDevServices.css";
 
 function SoftwareDevServices() {
 	return (
-		<Box
-			sx={{
-				margin: "0px 90px",
-				marginTop: 12,
-				paddingBottom: 12,
-			}}
-		>
-			<Grid2
-				container
-				spacing={2}
-			>
-				<Grid2
-					xs={3}
+		<div className="software-section">
+			<div className="container">
+				<Box
 					sx={{
-						color: "white",
+						marginTop: 12,
+						paddingBottom: 12,
 					}}
 				>
-					<h5>OUR APPROACH</h5>
-				</Grid2>
-				<Grid2 xs={9}>
-					<Box
+					<Grid2
+						container
+						spacing={2}
 						sx={{
-							width: "80%",
-							color: "white",
-							marginLeft: 8,
+							justifyContent: "space-between",
 						}}
 					>
-						<Stack>
-							<h2 className="approach-h2-title">We design, build, and deploy enterprise ecommerce that actually works.</h2>
-							<Grid2
-								direction="column"
-								gap={2}
-								wrap="nowrap"
+						<Grid2
+							xs={3}
+							sx={{
+								color: "white",
+							}}
+						>
+							<h5 className="software-section-title">SOFTWARE DEVELOPMENT SERVICES</h5>
+						</Grid2>
+						<Grid2 xs={9}>
+							<Box
 								sx={{
-									padding: 0,
-									display: "flex",
+									color: "white",
 								}}
 							>
-								<Grid2
-									xs={4}
-									sx={{
-										display: "inline-block",
-										padding: 0,
-										textAlign: "left",
-									}}
-								>
-									<h4 className="box-h4-title">How we do it</h4>
-									<p className="approach-text">We prioritize your business. That means integrating with existing systems, developing strategies that complement your operations, and delivering highly functional change management without derailing your day-to-day.</p>
-								</Grid2>
-								<Grid2
-									xs={4}
-									sx={{
-										display: "inline-block",
-										textAlign: "left",
-										padding: 0,
-									}}
-								>
-									<h4 className="box-h4-title">Capabilities</h4>
-									<p className="approach-text">Technology architecture planning • Agile project planning • DevOps assessment & planning • DevOps • UI/UX design • Data migration • Platform migration • eCommerce development</p>
-								</Grid2>
-								<Grid2
-									xs={4}
-									sx={{
-										display: "inline-block",
-									}}
-								></Grid2>
-							</Grid2>
-						</Stack>
-					</Box>
-				</Grid2>
-			</Grid2>
-		</Box>
+								<Stack>
+									<h2 className="software-h2-title">We provide custom software solutions to meet your unique business needs</h2>
+									<p className="software-text">Since 2009, we’ve partnered with ambitious startups, global nonprofits, and Fortune 500 companies to create custom software that helps them innovate and grow.</p>
+								</Stack>
+							</Box>
+						</Grid2>
+					</Grid2>
+					<Stack
+						direction="row"
+						color="white"
+					>
+						<Box
+							sx={{
+								display: "flex",
+								flexDirection: "column",
+								width: "26%",
+								gap: "24px",
+								textAlign: "left",
+								paddingRight: "20px",
+								boxSizing: "border-box",
+							}}
+						>
+							<h5 className="software-box-title">Web Application Development</h5>
+							<p className="software-box-text">Design and develop interactive web applications that can streamline operations, improve customer experiences, and grow your brand.</p>
+						</Box>
+						<Box
+							sx={{
+								display: "flex",
+								flexDirection: "column",
+								width: "26%",
+								gap: "24px",
+								textAlign: "left",
+								paddingRight: "30px",
+								boxSizing: "border-box",
+							}}
+						>
+							<h5 className="software-box-title">Prototyping & MVP Development</h5>
+							<p className="software-box-text">Save costs by rapidly testing new ideas and software features, providing valuable feedback for future development.</p>
+						</Box>
+						<Box
+							sx={{
+								display: "flex",
+								flexDirection: "column",
+								width: "26%",
+								gap: "24px",
+								textAlign: "left",
+								paddingRight: "30px",
+								boxSizing: "border-box",
+							}}
+						>
+							<h5 className="software-box-title">Application Modernization</h5>
+							<p className="software-box-text">Upgrade existing software applications to make them more efficient, effective, and secure.</p>
+						</Box>
+						<Box
+							sx={{
+								display: "flex",
+								flexDirection: "column",
+								width: "26%",
+								gap: "24px",
+								textAlign: "left",
+								paddingRight: "20px",
+								boxSizing: "border-box",
+							}}
+						>
+							<h5 className="software-box-title">Mobile Application Development</h5>
+							<p className="software-box-text">Create scalable, cross-platform, and hybrid mobile apps to improve your business reach.</p>
+						</Box>
+					</Stack>
+				</Box>
+			</div>
+		</div>
 	);
 }
 

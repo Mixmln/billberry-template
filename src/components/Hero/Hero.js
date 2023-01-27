@@ -5,7 +5,7 @@ import "./Hero.css";
 function Hero({ mainImage, title }) {
 	return (
 		<div
-			className="hero-container"
+			className="hero-container fade-in"
 			style={{
 				backgroundImage: `url(${mainImage})`,
 			}}

@@ -1,0 +1,32 @@
+.works-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-bottom: 125px;
+}
+
+.works-section {
+  color: white;
+}
+
+.works-section-title {
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+.fade-in {
+  animation: fade-in 1.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.every-p p {
+  margin-bottom: 5px;
+}
