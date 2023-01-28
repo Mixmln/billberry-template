@@ -1,5 +1,6 @@
 import React from "react";
 import Works from "../components/CustomSoftware/RecentWorks/Works";
+import Slider from "../components/CustomSoftware/Slider/Slider";
 import SoftwareDevServices from "../components/CustomSoftware/SoftwareDevServices/SoftwareDevServices";
 import Hero from "../components/Hero/Hero";
 import Nav from "../components/Nav/Nav";
@@ -14,6 +15,7 @@ function CustomSoftwarePage() {
 			></Hero>
 			<SoftwareDevServices></SoftwareDevServices>
 			<Works></Works>
+			<Slider></Slider>
 		</div>
 	);
 }

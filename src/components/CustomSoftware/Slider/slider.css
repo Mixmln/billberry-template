@@ -1,0 +1,48 @@
+.slider-section {
+  color: white;
+  background-image: url('/src/assets/img/cosmos.jpg');
+  background-size: cover;
+  height: 570px;
+  padding: 100px 0;
+}
+
+.slider-title {
+  font-size: 3.8rem;
+  width: 65%;
+  text-align: left;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.slide-left {
+  animation: slide-left 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) backwards;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+.slide-right {
+  animation: slide-right 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) backwards;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(0);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateX(200px);
+    opacity: 0
+  }
+}
