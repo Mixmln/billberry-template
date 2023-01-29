@@ -2,8 +2,11 @@ import React from "react";
 import Works from "../components/CustomSoftware/RecentWorks/Works";
 import Slider from "../components/CustomSoftware/Slider/Slider";
 import SoftwareDevServices from "../components/CustomSoftware/SoftwareDevServices/SoftwareDevServices";
+import Logos from "../components/DigitalTransformationPage/Logos/Logos";
 import Hero from "../components/Hero/Hero";
 import Nav from "../components/Nav/Nav";
+import Footer from "../components/Footer/Footer.js";
+import Notes from "../components/DigitalTransformationPage/Notes/Notes.js";
 
 function CustomSoftwarePage() {
 	return (
@@ -16,6 +19,15 @@ function CustomSoftwarePage() {
 			<SoftwareDevServices></SoftwareDevServices>
 			<Works></Works>
 			<Slider></Slider>
+			<div
+				style={{
+					padding: "70px 0 0px 0",
+				}}
+			>
+				<Logos></Logos>
+			</div>
+			<Notes></Notes>
+			<Footer></Footer>
 		</div>
 	);
 }
