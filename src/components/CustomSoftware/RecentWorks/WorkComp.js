@@ -82,6 +82,10 @@ function WorkComp({ work }) {
 					</Grid2>
 					<Grid2 lg={8}>
 						<img
+							style={{
+								maxWidth: "750px",
+								maxHeight: "490px",
+							}}
 							className="fade-in"
 							src={image}
 							alt=""
@@ -157,6 +161,10 @@ function WorkComp({ work }) {
 					</Grid2>
 					<Grid2 lg={8}>
 						<img
+							style={{
+								maxWidth: "750px",
+								maxHeight: "490px",
+							}}
 							className="fade-in"
 							src={image}
 							alt=""

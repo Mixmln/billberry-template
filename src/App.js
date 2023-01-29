@@ -5,6 +5,7 @@ import DigitalTransformationPage from "./pages/DigitalTransformationPage";
 import EcommerceDevelopmentPage from "./pages/EcommerceDevelopmentPage";
 import CustomSoftwarePage from "./pages/CustomSoftwarePage";
 import WebsiteDesignPage from "./pages/WebsiteDesignPage";
+import WorkPage from "./pages/WorkPage";
 
 function App() {
 	return (
@@ -29,6 +30,10 @@ function App() {
 				<Route
 					path="/website-design-development"
 					element={<WebsiteDesignPage />}
+				/>
+				<Route
+					path="/work"
+					element={<WorkPage />}
 				/>
 			</Routes>
 		</BrowserRouter>
