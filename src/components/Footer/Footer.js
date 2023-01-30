@@ -1,5 +1,5 @@
 import { ThemeProvider } from "@emotion/react";
-import { Button, createTheme, Switch } from "@mui/material";
+import { Box, Button, createTheme, Switch } from "@mui/material";
 import { Stack } from "@mui/system";
 import React from "react";
 import "./footer.css";
@@ -48,7 +48,13 @@ function Footer() {
 							</ul>
 							<p>©2023 All Rights Reserved. Privacy Policy</p>
 						</div>
-						<div className="footer-right">
+						<Box
+							className="footer-right"
+							sx={{
+								display: "flex",
+								flexDirection: "column",
+							}}
+						>
 							<h3>WANT TO PARTNER WITH US?</h3>
 							<Button
 								variant="outlined"
@@ -66,7 +72,7 @@ function Footer() {
 								Get in touch
 							</Button>
 							<p>Blueberry Technologies LLC DBA Bilberrry</p>
-						</div>
+						</Box>
 					</div>
 				</Stack>
 			</ThemeProvider>
