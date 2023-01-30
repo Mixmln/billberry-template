@@ -11,6 +11,7 @@ import NotesPage from "./pages/NotesPage";
 
 import ApproachPage from "./pages/ApproachPage";
 import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
 	return (
@@ -47,6 +48,10 @@ function App() {
 				<Route
 					path="/approach"
 					element={<ApproachPage />}
+				/>
+				<Route
+					path="/contact"
+					element={<ContactPage />}
 				/>
 			</Routes>
 		</BrowserRouter>
