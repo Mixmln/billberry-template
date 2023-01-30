@@ -1,0 +1,34 @@
+.notes-container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.note:hover h5 {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.under-line {
+  text-decoration: underline;
+}
+
+.note:hover .scale-up-ver-bottom {
+  animation: scale-up-ver-bottom 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes scale-up-ver-bottom {
+  0% {
+    text-decoration: none;
+    opacity: 1;
+    /* transform: scaleY(0.4); */
+    transform-origin: 0% 100%;
+  }
+
+  100% {
+    text-decoration: underline;
+    opacity: 1;
+    /* transform: scaleY(1); */
+    transform-origin: 0% 100%;
+  }
+}

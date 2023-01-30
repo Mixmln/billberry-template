@@ -6,6 +6,7 @@ import EcommerceDevelopmentPage from "./pages/EcommerceDevelopmentPage";
 import CustomSoftwarePage from "./pages/CustomSoftwarePage";
 import WebsiteDesignPage from "./pages/WebsiteDesignPage";
 import WorkPage from "./pages/WorkPage";
+import NotesPage from "./pages/NotesPage";
 
 function App() {
 	return (
@@ -34,6 +35,10 @@ function App() {
 				<Route
 					path="/work"
 					element={<WorkPage />}
+				/>
+				<Route
+					path="/notes"
+					element={<NotesPage />}
 				/>
 			</Routes>
 		</BrowserRouter>
