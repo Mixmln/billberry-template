@@ -1,0 +1,15 @@
+.approach-container {
+  background-image: url(https://bilberrry.com/wp-content/uploads/2022/08/1-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.approach-container h2 {
+  font-size: 3rem;
+  width: 30%;
+}
+
+.approach-container p {
+  font-size: 2rem;
+  width: 50%;
+}
