@@ -1,0 +1,50 @@
+.work-container {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  margin-bottom: 4rem;
+  padding-top: 5rem;
+  transition: 0.3s;
+}
+
+.work-container img {
+  width: 50%;
+}
+
+.work-container h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.work-container p {
+  width: 100%;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid white;
+}
+
+.work-container .first {
+  border-top: 1px solid #fff;
+  padding-top: 2rem;
+}
+
+.work-p-btn {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.work-p-btn:hover .slide-left {
+  animation: slide-left 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-10px);
+  }
+}

@@ -1,8 +1,13 @@
 import React from "react";
 import Hero from "../components/Hero/Hero";
 import Nav from "../components/Nav/Nav";
+import Approach from "../components/WebsiteDesignPage/Approach/Approach";
 import DesignProjects from "../components/WebsiteDesignPage/DesignProjects/DesignProjects";
 import Impact from "../components/WebsiteDesignPage/Impact/Impact";
+import MoreWork from "../components/WebsiteDesignPage/MoreWork/MoreWork";
+import Logos from "../components/DigitalTransformationPage/Logos/Logos";
+import Notes from "../components/DigitalTransformationPage/Notes/Notes";
+import Footer from "../components/Footer/Footer";
 
 function WebsiteDesignPage() {
 	return (
@@ -14,6 +19,11 @@ function WebsiteDesignPage() {
 			/>
 			<Impact />
 			<DesignProjects />
+			<Approach />
+			<MoreWork />
+			<Logos />
+			<Notes />
+			<Footer />
 		</div>
 	);
 }
