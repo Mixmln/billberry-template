@@ -3,7 +3,7 @@ import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import React from "react";
 import "./whatsNext.css";
 
-function Notes() {
+function WhatsNext() {
 	return (
 		<Box
 			sx={{
@@ -16,6 +16,7 @@ function Notes() {
 					color: "white",
 					textAlign: "left",
 					justifyContent: "space-between",
+					paddingBottom: "5rem",
 				}}
 			>
 				<h2>WHAT'S NEXT?</h2>
@@ -44,4 +45,4 @@ function Notes() {
 	);
 }
 
-export default Notes;
+export default WhatsNext;
