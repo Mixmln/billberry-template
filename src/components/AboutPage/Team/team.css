@@ -1,0 +1,16 @@
+.team-container h5 {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  width: 80%;
+}
+
+.team-container h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  width: 50%;
+}
+
+.team-container p {
+  font-size: 0.9rem;
+  width: 80%;
+}

@@ -10,6 +10,7 @@ import WorkPage from "./pages/WorkPage";
 import NotesPage from "./pages/NotesPage";
 
 import ApproachPage from "./pages/ApproachPage";
+import AboutPage from "./pages/AboutPage";
 
 function App() {
 	return (
@@ -46,7 +47,7 @@ function App() {
 				<Route
 					path="/approach"
 					element={<ApproachPage />}
-				></Route>
+				/>
 			</Routes>
 		</BrowserRouter>
 	);
