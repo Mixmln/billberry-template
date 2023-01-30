@@ -1,0 +1,9 @@
+.approach-hero-container {
+  height: 85vh;
+  margin-top: -90px;
+  position: relative;
+  background-color: #000;
+  text-align: center;
+  padding-top: 5rem;
+  border-bottom: 1px solid #fff;
+}

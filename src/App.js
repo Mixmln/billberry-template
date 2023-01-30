@@ -6,7 +6,10 @@ import EcommerceDevelopmentPage from "./pages/EcommerceDevelopmentPage";
 import CustomSoftwarePage from "./pages/CustomSoftwarePage";
 import WebsiteDesignPage from "./pages/WebsiteDesignPage";
 import WorkPage from "./pages/WorkPage";
+
 import NotesPage from "./pages/NotesPage";
+
+import ApproachPage from "./pages/ApproachPage";
 
 function App() {
 	return (
@@ -40,6 +43,10 @@ function App() {
 					path="/notes"
 					element={<NotesPage />}
 				/>
+				<Route
+					path="/approach"
+					element={<ApproachPage />}
+				></Route>
 			</Routes>
 		</BrowserRouter>
 	);
