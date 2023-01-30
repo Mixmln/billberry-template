@@ -6,9 +6,7 @@ import EcommerceDevelopmentPage from "./pages/EcommerceDevelopmentPage";
 import CustomSoftwarePage from "./pages/CustomSoftwarePage";
 import WebsiteDesignPage from "./pages/WebsiteDesignPage";
 import WorkPage from "./pages/WorkPage";
-
 import NotesPage from "./pages/NotesPage";
-
 import ApproachPage from "./pages/ApproachPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
