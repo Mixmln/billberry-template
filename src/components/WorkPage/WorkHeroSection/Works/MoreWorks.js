@@ -249,27 +249,34 @@ function MoreWorks() {
 
 	return (
 		<div
-			className="container"
 			style={{
-				color: "white",
+				borderBottom: "1px solid white",
+				paddingBottom: "20px",
 			}}
 		>
-			<Stack
-				sx={{
-					margin: "70px auto",
-					marginBottom: "0",
-					paddingBottom: "70px",
-					maxWidth: "1170px",
+			<div
+				className="container"
+				style={{
+					color: "white",
 				}}
-				spacing={12}
 			>
-				{moreWorks.map((work, i) => (
-					<WorkComp
-						key={i}
-						work={work}
-					></WorkComp>
-				))}
-			</Stack>
+				<Stack
+					sx={{
+						margin: "70px auto",
+						marginBottom: "0",
+						paddingBottom: "70px",
+						maxWidth: "1170px",
+					}}
+					spacing={12}
+				>
+					{moreWorks.map((work, i) => (
+						<WorkComp
+							key={i}
+							work={work}
+						></WorkComp>
+					))}
+				</Stack>
+			</div>
 		</div>
 	);
 }
