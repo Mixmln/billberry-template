@@ -1,5 +1,4 @@
 import React from "react";
-import Nav from "../Nav/Nav";
 import "./Hero.css";
 
 function Hero({ mainImage, title }) {

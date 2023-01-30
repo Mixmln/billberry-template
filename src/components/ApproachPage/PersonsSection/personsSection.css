@@ -1,0 +1,37 @@
+.persons-container {
+  text-align: left;
+}
+
+.persons-container h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  line-height: 0.9;
+}
+
+.persons-container .par {
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+}
+
+
+.persons-container ul {
+  padding: 0;
+  display: flex;
+  gap: 0;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.persons-container ul li {
+  padding: 0;
+  margin: 0;
+}
+
+.person-quote {
+  font-size: 0.8rem;
+}
+
+.person-title {
+  font-size: 0.6rem;
+  float: right;
+}
