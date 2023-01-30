@@ -7,6 +7,7 @@ import CustomSoftwarePage from "./pages/CustomSoftwarePage";
 import WebsiteDesignPage from "./pages/WebsiteDesignPage";
 import WorkPage from "./pages/WorkPage";
 import ApproachPage from "./pages/ApproachPage";
+import AboutPage from "./pages/AboutPage";
 
 function App() {
 	return (
@@ -39,6 +40,10 @@ function App() {
 				<Route
 					path="/approach"
 					element={<ApproachPage />}
+				/>
+				<Route
+					path="/about"
+					element={<AboutPage />}
 				/>
 			</Routes>
 		</BrowserRouter>
