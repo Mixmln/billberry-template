@@ -14,7 +14,13 @@
 .think,
 .build,
 .eye {
-  width: 50%;
+  width: 40%;
+}
+
+.eye {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  padding: 0 2rem;
 }
 
 .benefits h4 {
